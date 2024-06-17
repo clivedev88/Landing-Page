@@ -3,59 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clive Kifumbi - Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Adicionando a biblioteca Font Awesome para os ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Adicionando a biblioteca Devicons para os ícones das redes sociais -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <title>Clive Kifumbi - Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">CK</a>
-        <nav>
-            <ul>
-                <li><a href="index.html" data-lang="pt-BR">Home</a></li>
-                <li><a href="about.html" data-lang="pt-BR">About</a></li>
-                <li><a href="portfolio.html" data-lang="eng">Portfolio</a></li>
-                <li><a href="contact.html" data-lang="pt-BR">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="languages">
-            <!-- Substitua os ícones pelos elementos de imagem das bandeiras -->
-            <a href="#" class="translate" data-lang="fra"><img src="French flag.png" alt="Francês" class="bandeira"></a>
-            <a href="#" class="translate" data-lang="eng"><img src="USAflag.webp" alt="Inglês" class="bandeira"></a>
-            <a href="#" class="translate" data-lang="port"><img src="BR_flag_2-removebg-preview.png" alt="Português" class="bandeira"></a>
-        </div>
-    </header>
-        
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
     <div class="container">
-        <div class="text-box">
-            <div class="content">
-                <h1 class="hello">Olá! Sou o <span class="highlight">Clive Kifumbi</span></h1>
-                <h2 class="developer">Desenvolvedor Full Stack</h2>
-                <p class="description">Um desenvolvedor frontend em formação apaixonado por tecnologia. <br> Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de programação, além de compartilhar meus conhecimentos. </p> 
+        <div class="left-side">
+            <div class="content-box">
+                <section id="hero">
+                    <h1>Clive Kifumbi</h1>
+                    <h2>Aspiring Software Engineer</h2>
+                    <p>Transitioning from a rich teaching background to the dynamic world of programming.</p>
+                </section>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-icons">
+                    <a href="mailto:example@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/your-github-account"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/your-linkedin-profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/your-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/your-twitter"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
-        <div class="photo">
-            <img src="Untitled design (1).png" alt="Foto de Clive Kifumbi">
+        <div class="right-side">
+            <section id="about">
+                <div class="about-content">
+                    <p>I started an Engineering Graduation 15 years ago, in 2009 at the Federal University of Campina Grande. A year later, I started teaching private French/English to earn some money. This eventually became my main activity. During my graduation, I interned on construction sites at JAR Construções Ltda (06/2013 - 07/2014) and then became a field supervisor at Concepto Ltda (06/2014 - 05/2016).</p>
+                    <p>After that, I pursued a career as a teacher. I worked at language schools like Wizard (2016 - 2020), Effort Idiomas (2017), and Espaço Aberto (2019). Later, I became a Pedagogical Coordinator at HUGLE Education (01/2020 - 07/2021). Since then, I have been teaching English and French privately both online and on-site.</p>
+                    <p>In 2023, I decided to return to studying and started an Online Graduation in Systems Analysis and Development at Faculdade Estácio. To get more practical experience, I also enrolled in a Full Stack Programming Course at Infinity School in Fortaleza. My goal is to fully transition to the programming area. Currently, I'm enrolled in a course at Alura where I aim to study everything about programming and design.</p>
+                    <p>Over the past year, I've been working and studying diligently. I've learned languages like Python, HTML, CSS, and gained experience with frameworks like FLASK, Django, and databases like MySQL. I'm currently learning JavaScript and continuously expanding my knowledge. You can check out my projects on my GitHub account.</p>
+                </div>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-content">
+                    <div class="experience-box">
+                        <div class="experience-time">
+                            <span class="date">06/2013 — 07/2014</span>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Intern at JAR Construções Ltda</h3>
+                            <p>Worked on construction sites, gaining practical experience in the field.</p>
+                            <p>Assisted with project management and on-site coordination.</p>
+                            <p>Collaborated with engineers and contractors to ensure project completion.</p>
+                            <div class="platforms">
+                                <span class="highlight">AutoCAD</span>
+                                <span class="highlight">MS Project</span>
+                                <span class="highlight">Revit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <div class="experience-time">
+                            <span class="date">06/2014 — 05/2016</span>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Field Supervisor at Concepto Ltda</h3>
+                            <p>Supervised construction sites, ensuring quality and efficiency.</p>
+                            <p>Managed a team of workers and subcontractors.</p>
+                            <p>Maintained project schedules and budgets.</p>
+                            <div class="platforms">
+                                <span class="highlight">Primavera</span>
+                                <span class="highlight">SAP</span>
+                                <span class="highlight">Bluebeam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <div class="experience-time">
+                            <span class="date">2016 — 2020</span>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Teacher at Wizard</h3>
+                            <p>Taught English and French to a variety of students.</p>
+                            <p>Developed customized lesson plans and assessments.</p>
+                            <p>Organized cultural exchange programs to enhance language learning.</p>
+                            <div class="platforms">
+                                <span class="highlight">Google Classroom</span>
+                                <span class="highlight">Zoom</span>
+                                <span class="highlight">Duolingo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <div class="experience-time">
+                            <span class="date">2017</span>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Teacher at Effort Idiomas</h3>
+                            <p>Worked as a French and English teacher for one year.</p>
+                            <p>Conducted classes for beginners to advanced learners.</p>
+                            <p>Implemented interactive teaching techniques to improve engagement.</p>
+                            <div class="platforms">
+                                <span class="highlight">Skype</span>
+                                <span class="highlight">Canvas</span>
+                                <span class="highlight">Babbel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <div class="experience-time">
+                            <span class="date">2019</span>
+                        </div>
+                        <div class="experience-info">
+                            <h3>English Teacher at Espaço Aberto</h3>
+                            <p>Taught English at an elementary school for one year.</p>
+                            <p>Designed age-appropriate curriculum and activities.</p>
+                            <p>Encouraged language development through storytelling and play.</p>
+                            <div class="platforms">
+                                <span class="highlight">Seesaw</span>
+                                <span class="highlight">ClassDojo</span>
+                                <span class="highlight">Flipgrid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <div class="experience-time">
+                            <span class="date">01/2020 — 07/2021</span>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Pedagogical Coordinator at HUGLE Education</h3>
+                            <p>Coordinated English teaching programs and mentored other teachers.</p>
+                            <p>Developed and implemented educational policies and procedures.</p>
+                            <p>Led teacher training sessions and workshops.</p>
+                            <div class="platforms">
+                                <span class="highlight">Moodle</span>
+                                <span class="highlight">Edmodo</span>
+                                <span class="highlight">Nearpod</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects-content">
+                    <a href="https://github.com/your-github-account/project1" class="project-box">
+                        <img src="images/project1.jpg" alt="Project 1" class="project-img">
+                        <div class="project-info">
+                            <h3>Project Alpha</h3>
+                            <p>A web application for managing tasks and projects efficiently.</p>
+                            <div class="languages">
+                                <span class="highlight">Python</span>
+                                <span class="highlight">Django</span>
+                                <span class="highlight">JavaScript</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/your-github-account/project2" class="project-box">
+                        <img src="images/project2.jpg" alt="Project 2" class="project-img">
+                        <div class="project-info">
+                            <h3>Project Beta</h3>
+                            <p>An e-commerce platform with a user-friendly interface.</p>
+                            <div class="languages">
+                                <span class="highlight">React</span>
+                                <span class="highlight">Node.js</span>
+                                <span class="highlight">MongoDB</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/your-github-account/project3" class="project-box">
+                        <img src="images/project3.jpg" alt="Project 3" class="project-img">
+                        <div class="project-info">
+                            <h3>Project Gamma</h3>
+                            <p>A mobile app for tracking fitness activities and goals.</p>
+                            <div class="languages">
+                                <span class="highlight">Flutter</span>
+                                <span class="highlight">Dart</span>
+                                <span class="highlight">Firebase</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/your-github-account/project4" class="project-box">
+                        <img src="images/project4.jpg" alt="Project 4" class="project-img">
+                        <div class="project-info">
+                            <h3>Project Delta</h3>
+                            <p>A social media platform for sharing and discovering new recipes.</p>
+                            <div class="languages">
+                                <span class="highlight">Vue.js</span>
+                                <span class="highlight">Express</span>
+                                <span class="highlight">MySQL</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/your-github-account/project5" class="project-box">
+                        <img src="images/project5.jpg" alt="Project 5" class="project-img">
+                        <div class="project-info">
+                            <h3>Project Epsilon</h3>
+                            <p>A chatbot for customer service automation.</p>
+                            <div class="languages">
+                                <span class="highlight">Python</span>
+                                <span class="highlight">Flask</span>
+                                <span class="highlight">TensorFlow</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section id="resume">
+                <h2>Resume</h2>
+                <div class="resume-content">
+                    <p>You can view and download my resume <a href="#" id="downloadResume">here</a>.</p>
+                    <div class="resume-view" id="resumeView">
+                        <h3>Clive Kifumbi</h3>
+                        <p>Aspiring Software Engineer</p>
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>+55 85 9 9991-7055</li>
+                            <li>clivekif@gmail.com</li>
+                            <li>1497, Gilberto Studart St., Fortaleza - CE (Brazil)</li>
+                            <li><a href="https://clivedev88.github.io/Landing-Page/" target="_blank">https://clivedev88.github.io/Landing-Page/</a></li>
+                        </ul>
+                        <h4>Education</h4>
+                        <ul>
+                            <li>Bachelor's in Engineering, Federal University of Campina Grande (2009 - 2016)</li>
+                            <li>Graphic Design Course, Pixels Escola de Design (Dec 2022 - May 2024)</li>
+                            <li>Online Graduation in Systems Analysis and Development, Faculdade Estácio (2023 - 2025)</li>
+                            <li>Full Stack Programming Course, Infinity School (2023 - 2024)</li>
+                        </ul>
+                        <h4>Experience</h4>
+                        <ul>
+                            <li>Intern at JAR Construções Ltda (06/2013 - 07/2014)</li>
+                            <li>Field Supervisor at Concepto Ltda (06/2014 - 05/2016)</li>
+                            <li>Teacher at Wizard (2016 - 2020)</li>
+                            <li>Teacher at Effort Idiomas (2017)</li>
+                            <li>English Teacher at Espaço Aberto (2019)</li>
+                            <li>Pedagogical Coordinator at HUGLE Education (01/2020 - 07/2021)</li>
+                            <li>Private English and French Teacher (2022 - Present)</li>
+                        </ul>
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Python, HTML, CSS, JavaScript</li>
+                            <li>FLASK, Django, MySQL</li>
+                            <li>Adobe Creative Cloud (Illustrator, Photoshop, InDesign, After Effects, Animate, Adobe Premiere)</li>
+                            <li>3DsMax</li>
+                        </ul>
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>English (Fluent)</li>
+                            <li>French (Native)</li>
+                            <li>Portuguese (Fluent)</li>
+                            <li>Lingala (Native)</li>
+                            <li>Swahili (Intermediate)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-    
-    <div class="btn-text">
-        <button class="btn-cv" data-lang="eng">Download CV</button>
-    </div>
-  
-    <footer>
-        <div class="social-icons">
-            <!-- Ícones do Font Awesome para redes sociais -->
-            <a href="https://www.instagram.com/clikif/"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/5585999895919"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/clive-kifumbi"><i class="devicon-linkedin-plain"></i></a>
-            <a href="https://github.com/clivedev88"><i class="devicon-github-original"></i></a>
-        </div>
-    </footer>
-    
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </body>
 </html>
