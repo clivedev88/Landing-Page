@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -11,13 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Intersection Observer to highlight the current section in the nav
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
 
 const options = {
   root: null,
-  threshold: 0.3 // Lowered the threshold to account for shorter sections
+  threshold: 0.3
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -40,7 +38,6 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-// Progress Indicator
 window.onscroll = function() {updateProgressBar()};
 
 function updateProgressBar() {
@@ -50,7 +47,6 @@ function updateProgressBar() {
   document.getElementById('progressBar').style.width = scrolled + "%";
 }
 
-// Generate PDF for Resume
 document.getElementById('downloadResume').addEventListener('click', function() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
